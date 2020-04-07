@@ -1,0 +1,11 @@
+---
+# tasks file for vol
+- template:
+    src: pvc.yaml.j2
+    dest: /tmp/pvc.yaml
+
+- k8s:
+    state: present
+    src: /tmp/pvc.yaml
+    wait: true
+    namespace: "{{ meta.namespace }}"

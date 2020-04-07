@@ -1,0 +1,5 @@
+---
+- version: v1alpha1
+  group: foobar.org
+  kind: Vol
+  role: vol

@@ -1,0 +1,7 @@
+apiVersion: foobar.org/v1alpha1
+kind: Vol
+metadata:
+  name: example
+spec:
+  pvc_size: 1Gi
+  pvc_name: example
